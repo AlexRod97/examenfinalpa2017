@@ -4,7 +4,7 @@ import gt.edu.url.problema3.Animal;
 public class Main {
 
 	public static void main(String[] args) {
-		Animal bambi = new Animal("salvaje", 10, "100 lbs.", "cafecito");		
+		Animal bambi = new Animal("salvaje", 10, 100, "cafecito");		
 		LeakyStack<Animal> animalHistory = new ImplLeakyStack<>(1);
 		
 		bambi = animalHistory.saveHistory(bambi); //Push

@@ -83,6 +83,7 @@ public class ImplLeakyStack<E> implements LeakyStack<E> {
 		if (cont == 0)
 		{
 			addFirst(e); 
+			cont++; 
 		}
 		else 
 		{
@@ -90,13 +91,13 @@ public class ImplLeakyStack<E> implements LeakyStack<E> {
 		}
 	
 		
-		return null;
+		return e;
 	}
 
 	@Override
 	public E actual() {
 		
-		return null;
+		return last();
 	}
 
 	@Override

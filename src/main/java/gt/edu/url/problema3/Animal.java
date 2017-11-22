@@ -4,7 +4,7 @@ public class Animal {
 	
 	private String type;
 	private int age;
-	private String weight;
+	private double weight;
 	private String skinColor;
 	
 	/**
@@ -17,7 +17,7 @@ public class Animal {
 	}
 	
 	
-	public Animal(String type, int age, String weight, String skinColor) {
+	public Animal(String type, int age, double weight, String skinColor) {
 		super();
 		this.type = type + "";
 		this.age = age;
@@ -40,10 +40,10 @@ public class Animal {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public String getWeight() {
+	public double getWeight() {
 		return weight;
 	}
-	public void setWeight(String weight) {
+	public void setWeight(double weight) {
 		this.weight = weight;
 	}
 	public String getSkinColor() {
